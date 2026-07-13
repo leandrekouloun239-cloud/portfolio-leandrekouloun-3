@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - KOULOUN Léandre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formations.html">Formations & Compétences</a></li>
+        <li><a href="projets.html">SAE & Projets</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Section d’accueil -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="images/photo_profil.jpg" alt="Photo de Léandre KOULOUN" class="profile-pic">
+      <h1>KOULOUN Gnim Léandre</h1>
+      <h2>Étudiant en Génie Mécanique et Productique</h2>
+      <p>Rigoureux, ambitieux et orienté résultats. Passionné par la conception mécanique et la maintenance industrielle.</p>
+      <a href="contact.html" class="btn">Me contacter</a>
+    </div>
+  </section>
+</body>
+</html>
+/* Style global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+/* Barre de navigation */
+header {
+  background-color: #0a3d62;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #f1c40f;
+}
+/* Section accueil */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(to right, #0a3d62, #1e90ff);
+  color: white;
+  text-align: center;
+}
+.hero-content {
+  max-width: 600px;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #f1c40f;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+.hero h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.hero p {
+  font-size: 1.1em;
+  margin: 20px 0;
+}
+.btn {
+  background-color: #f1c40f;
+  color: #0a3d62;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #0a3d62;
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formations & Compétences - KOULOUN Léandre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formations.html" class="active">Formations & Compétences</a></li>
+        <li><a href="projets.html">SAE & Projets</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Section Formations -->
+  <section class="content">
+    <h1>Formations</h1>
+    <div class="card">
+      <h2>2023 - Présent</h2>
+      <p><strong>Licence en Génie Mécanique et Productique</strong> - ESIG GLOBAL SUCCESS</p>
+    </div>
+    <div class="card">
+      <h2>Août 2023</h2>
+      <p>Formation en rebobinage de moteur asynchrone</p>
+    </div>
+    <div class="card">
+      <h2>2020 - 2023</h2>
+      <p><strong>Licence en Marketing et Stratégie</strong> - Université de Lomé (UL)</p>
+    </div>
+    <div class="card">
+      <h2>2020</h2>
+      <p>Baccalauréat Scientifique</p>
+    </div>
+  </section>
+  <!-- Section Compétences -->
+  <section class="content">
+    <h1>Compétences Techniques</h1>
+    <ul class="skills">
+      <li>Montage et démontage mécanique</li>
+      <li>Contrôle et inspection de pièces</li>
+      <li>Résolution de problèmes techniques</li>
+      <li>Diagnostic mécanique</li>
+      <li>Analyse de pannes</li>
+    </ul>
+  </section>
+  <!-- Section Logiciels -->
+  <section class="content">
+    <h1>Logiciels</h1>
+    <ul class="skills">
+      <li>SolidWorks</li>
+      <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+    </ul>
+  </section>
+</body>
+</html>
+/* Section contenu */
+.content {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+.content h1 {
+  color: #0a3d62;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Cartes */
+.card {
+  background: #fff;
+  border: 2px solid #f1c40f;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+/* Liste compétences */
+.skills {
+  list-style: none;
+  padding: 0;
+}
+.skills li {
+  background: #1e90ff;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.skills li:hover {
+  background: #0a3d62;
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>SAE & Projets - KOULOUN Léandre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formations.html">Formations & Compétences</a></li>
+        <li><a href="projets.html" class="active">SAE & Projets</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Section SAE -->
+  <section class="content">
+    <h1>Situations d’Apprentissage et d’Évaluation (SAE)</h1>
+    <div class="card">
+      <h2>Gestion de surcharge de production</h2>
+      <ul>
+        <li>Analyse de la charge et de la capacité de production</li>
+        <li>Identification des goulots d’étranglement</li>
+        <li>Planification et ordonnancement de la production</li>
+        <li>Mise en place d’actions d’optimisation et de régulation</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Éco-conception et modularité d’un ouvre portail coulissant</h2>
+      <ul>
+        <li>Analyse fonctionnelle et environnementale</li>
+        <li>Conception modulaire (CAO)</li>
+        <li>Choix des matériaux écologiques</li>
+        <li>Évaluation de l’impact environnemental</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Étude et conception d’un poste automatisé complet</h2>
+      <ul>
+        <li>Analyse du besoin et du cahier des charges</li>
+        <li>Conception du système automatisé</li>
+        <li>Dimensionnement et choix des composants</li>
+        <li>Simulation et validation du fonctionnement</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Optimisation d’un processus de fabrication assisté par CAO</h2>
+      <ul>
+        <li>Analyse du processus existant</li>
+        <li>Modélisation et simulation (CAO)</li>
+        <li>Identification des inefficacités</li>
+        <li>Proposition et validation des améliorations</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Conception d’un mini-broyeur</h2>
+      <ul>
+        <li>Analyse du besoin et des fonctions de service</li>
+        <li>Élaboration du cahier des charges fonctionnel</li>
+        <li>Étude de faisabilité et choix des solutions techniques</li>
+        <li>Dimensionnement mécanique (RDM, arbres, lames, engrenages)</li>
+        <li>Choix des composants (moteur, réducteur, roulements)</li>
+        <li>Conception assistée par ordinateur (CAO)</li>
+        <li>Estimation des coûts</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Section Projets Académiques -->
+  <section class="content">
+    <h1>Projets Académiques</h1>
+    <div class="card">
+      <h2>Chariot élévateur électrique</h2>
+      <ul>
+        <li>Analyse du besoin et élaboration du cahier des charges</li>
+        <li>Conception et modélisation du système (CAO)</li>
+        <li>Dimensionnement des composants mécaniques et électriques</li>
+        <li>Choix des composants (moteur, batterie, vérins, transmission)</li>
+        <li>Étude de faisabilité technique</li>
+        <li>Fabrication et assemblage du prototype</li>
+        <li>Tests, validation et mise au point</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
+.card h2 {
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie - KOULOUN Léandre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formations.html">Formations & Compétences</a></li>
+        <li><a href="projets.html">SAE & Projets</a></li>
+        <li><a href="galerie.html" class="active">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Galerie -->
+  <section class="content">
+    <h1>Galerie de Réalisations</h1>
+    <div class="gallery">
+      <figure>
+        <img src="images/photo1.jpg" alt="Diagnostic moteur en atelier">
+        <figcaption>Diagnostic moteur en atelier lors du stage en garage automobile</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo2.jpg" alt="Étude de faisabilité du mini-broyeur">
+        <figcaption>Étude de faisabilité et conception assistée par ordinateur du mini-broyeur</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo3.jpg" alt="Fabrication prototype chariot élévateur">
+        <figcaption>Fabrication et assemblage du prototype de chariot élévateur électrique</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo4.jpg" alt="Travaux de maintenance mécanique">
+        <figcaption>Travaux pratiques de maintenance mécanique et contrôle de pièces</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo5.jpg" alt="Simulation CAO">
+        <figcaption>Simulation et modélisation assistée par ordinateur (CAO)</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo6.jpg" alt="Opération de soudure">
+        <figcaption>Opération de soudure sur châssis dans le cadre d’un projet académique</figcaption>
+      </figure>
+    </div>
+  </section>
+</body>
+</html>
+/* Galerie */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.gallery figure {
+  background: #fff;
+  border: 2px solid #f1c40f;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.gallery figure:hover {
+  transform: scale(1.05);
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.gallery figcaption {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  background: #0a3d62;
+  color: #fff;
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - KOULOUN Léandre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formations.html">Formations & Compétences</a></li>
+        <li><a href="projets.html">SAE & Projets</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Section Contact -->
+  <section class="content">
+    <h1>Contact</h1>
+    <div class="contact-info">
+      <p><strong>Email :</strong> <a href="mailto:Leandrekouloun239@gmail.com">Leandrekouloun239@gmail.com</a></p>
+      <p><strong>Téléphone :</strong> <a href="tel:+22890951815">+228 90 95 18 15</a></p>
+      <p><strong>Localisation :</strong> Lomé, Togo</p>
+    </div>
+    <div class="contact-form">
+      <h2>Envoyez-moi un message</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+    <div class="cv-download">
+      <h2>Télécharger mon CV</h2>
+      <a href="documents/CV_KOULOUN.pdf" class="btn">Télécharger</a>
+    </div>
+  </section>
+</body>
+</html>
+/* Contact */
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+.contact-info a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+/* Formulaire */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #f1c40f;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-form button {
+  margin-top: 10px;
+}
+/* CV Download */
+.cv-download {
+  text-align: center;
+}
+.cv-download a {
+  margin-top: 15px;
+  display: inline-block;
+}
